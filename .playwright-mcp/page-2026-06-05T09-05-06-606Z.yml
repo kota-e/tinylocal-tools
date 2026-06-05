@@ -1,0 +1,715 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e9]:
+        - button "Toggle navigation" [ref=e11] [cursor=pointer]
+        - link "Homepage" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img [ref=e18]
+        - generic [ref=e20]:
+          - link "Sign in" [ref=e21] [cursor=pointer]:
+            - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fkota-e%2Ftinylocal-tools
+          - button "Appearance settings" [ref=e24] [cursor=pointer]:
+            - img
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - img [ref=e33]
+          - link "kota-e" [ref=e36] [cursor=pointer]:
+            - /url: /kota-e
+          - generic [ref=e37]: /
+          - strong [ref=e38]:
+            - link "tinylocal-tools" [ref=e39] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools
+          - generic [ref=e40]: Public
+        - generic [ref=e41]:
+          - list:
+            - listitem [ref=e42]:
+              - link "You must be signed in to change notification settings" [ref=e43] [cursor=pointer]:
+                - /url: /login?return_to=%2Fkota-e%2Ftinylocal-tools
+                - img [ref=e44]
+                - text: Notifications
+            - listitem [ref=e46]:
+              - link "Fork 0" [ref=e47] [cursor=pointer]:
+                - /url: /login?return_to=%2Fkota-e%2Ftinylocal-tools
+                - img [ref=e48]
+                - text: Fork
+                - generic "0" [ref=e50]
+            - listitem [ref=e51]:
+              - link "You must be signed in to star a repository" [ref=e53] [cursor=pointer]:
+                - /url: /login?return_to=%2Fkota-e%2Ftinylocal-tools
+                - img [ref=e54]
+                - text: Star
+                - generic "0 users starred this repository" [ref=e56]: "0"
+      - navigation "Repository" [ref=e57]:
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link "Code" [ref=e60] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools
+              - img [ref=e61]
+              - generic [ref=e63]: Code
+          - listitem [ref=e64]:
+            - link "Issues" [ref=e65] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/issues
+              - img [ref=e66]
+              - generic [ref=e69]: Issues
+          - listitem [ref=e70]:
+            - link "Pull requests" [ref=e71] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/pulls
+              - img [ref=e72]
+              - generic [ref=e74]: Pull requests
+          - listitem [ref=e75]:
+            - link "Actions" [ref=e76] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/actions
+              - img [ref=e77]
+              - generic [ref=e79]: Actions
+          - listitem [ref=e80]:
+            - link "Projects" [ref=e81] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/projects
+              - img [ref=e82]
+              - generic [ref=e84]: Projects
+          - listitem [ref=e85]:
+            - link "Security and quality" [ref=e86] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/security
+              - img [ref=e87]
+              - generic [ref=e89]: Security and quality
+          - listitem [ref=e90]:
+            - link "Insights" [ref=e91] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/pulse
+              - img [ref=e92]
+              - generic [ref=e94]: Insights
+    - generic [ref=e107]:
+      - heading "kota-e/tinylocal-tools" [level=1] [ref=e109]
+      - generic [ref=e110]:
+        - generic [ref=e113]:
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - button "main branch" [ref=e117] [cursor=pointer]:
+                - generic [ref=e118]:
+                  - generic [ref=e120]:
+                    - img [ref=e122]
+                    - generic [ref=e125]: main
+                  - generic:
+                    - img
+              - generic [ref=e126]:
+                - link "Go to Branches page" [ref=e127] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/branches
+                  - img [ref=e128]
+                - link "Go to Tags page" [ref=e130] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/tags
+                  - img [ref=e131]
+            - generic [ref=e133]:
+              - button "Go to file" [ref=e136] [cursor=pointer]:
+                - generic [ref=e138]: Go to file
+              - button "Code" [ref=e139] [cursor=pointer]:
+                - generic [ref=e140]:
+                  - generic:
+                    - img
+                  - generic [ref=e141]: Code
+                  - generic:
+                    - img
+          - generic [ref=e142]:
+            - generic [ref=e143]:
+              - heading "Folders and files" [level=2] [ref=e144]
+              - table "Folders and files" [ref=e145]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e146]:
+                  - row "Latest commit kota-e commits by kota-e Ignore local helper artifacts success Commit 1b7c17e · Jun 5, 202615 minutes ago History View commit history for this file." [ref=e147]:
+                    - cell "Latest commit kota-e commits by kota-e Ignore local helper artifacts success Commit 1b7c17e · Jun 5, 202615 minutes ago History View commit history for this file." [ref=e148]:
+                      - generic [ref=e149]:
+                        - heading "Latest commit" [level=2] [ref=e150]
+                        - generic [ref=e151]:
+                          - generic [ref=e153]:
+                            - link "kota-e" [ref=e154] [cursor=pointer]:
+                              - /url: /kota-e
+                              - img "kota-e" [ref=e155]
+                            - link "commits by kota-e" [ref=e156] [cursor=pointer]:
+                              - /url: /kota-e/tinylocal-tools/commits?author=kota-e
+                              - text: kota-e
+                          - generic [ref=e157]:
+                            - link "Ignore local helper artifacts" [ref=e160] [cursor=pointer]:
+                              - /url: /kota-e/tinylocal-tools/commit/1b7c17e4aadfd96ae8757d4a30c012fbea91f4c2
+                            - button "success" [ref=e161] [cursor=pointer]:
+                              - img [ref=e162]
+                        - generic [ref=e164]:
+                          - generic [ref=e166]:
+                            - link "Commit 1b7c17e" [ref=e167] [cursor=pointer]:
+                              - /url: /kota-e/tinylocal-tools/commit/1b7c17e4aadfd96ae8757d4a30c012fbea91f4c2
+                              - text: 1b7c17e
+                            - text: ·
+                            - generic "Jun 5, 2026, 5:49 PM GMT+9" [ref=e168]: Jun 5, 202615 minutes ago
+                          - generic [ref=e169]:
+                            - heading "History" [level=2] [ref=e170]
+                            - link "View commit history for this file." [ref=e172] [cursor=pointer]:
+                              - /url: /kota-e/tinylocal-tools/commits/main/
+                              - generic [ref=e173]:
+                                - generic:
+                                  - img
+                  - row ".github, (Directory) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e174]:
+                    - cell ".github, (Directory)" [ref=e175]:
+                      - generic [ref=e176]:
+                        - img [ref=e177]
+                        - link ".github, (Directory)" [ref=e182] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/tree/main/.github
+                          - text: .github
+                    - cell "Initial TinyLocal Tools MVP" [ref=e183]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e186] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e187]:
+                      - generic [ref=e188]: Jun 5, 20261 hour ago
+                  - row "src, (Directory) 出力欄のコピー按钮を枠内に収める Jun 5, 202621 minutes ago" [ref=e189]:
+                    - cell "src, (Directory)" [ref=e190]:
+                      - generic [ref=e191]:
+                        - img [ref=e192]
+                        - link "src, (Directory)" [ref=e197] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/tree/main/src
+                          - text: src
+                    - cell "出力欄のコピー按钮を枠内に収める" [ref=e198]:
+                      - link "出力欄のコピー按钮を枠内に収める" [ref=e201] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/ca86fa81ba7734d42798c23223985c5ccab4f342
+                    - cell "Jun 5, 202621 minutes ago" [ref=e202]:
+                      - generic [ref=e203]: Jun 5, 202621 minutes ago
+                  - row ".gitignore, (File) Ignore local helper artifacts Jun 5, 202615 minutes ago" [ref=e204]:
+                    - cell ".gitignore, (File)" [ref=e205]:
+                      - generic [ref=e206]:
+                        - img [ref=e207]
+                        - link ".gitignore, (File)" [ref=e212] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/.gitignore
+                          - text: .gitignore
+                    - cell "Ignore local helper artifacts" [ref=e213]:
+                      - link "Ignore local helper artifacts" [ref=e216] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/1b7c17e4aadfd96ae8757d4a30c012fbea91f4c2
+                    - cell "Jun 5, 202615 minutes ago" [ref=e217]:
+                      - generic [ref=e218]: Jun 5, 202615 minutes ago
+                  - row "AGENTS.md, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e219]:
+                    - cell "AGENTS.md, (File)" [ref=e220]:
+                      - generic [ref=e221]:
+                        - img [ref=e222]
+                        - link "AGENTS.md, (File)" [ref=e227] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/AGENTS.md
+                          - text: AGENTS.md
+                    - cell "Initial TinyLocal Tools MVP" [ref=e228]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e231] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e232]:
+                      - generic [ref=e233]: Jun 5, 20261 hour ago
+                  - row "CHANGELOG.md, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e234]:
+                    - cell "CHANGELOG.md, (File)" [ref=e235]:
+                      - generic [ref=e236]:
+                        - img [ref=e237]
+                        - link "CHANGELOG.md, (File)" [ref=e242] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/CHANGELOG.md
+                          - text: CHANGELOG.md
+                    - cell "Initial TinyLocal Tools MVP" [ref=e243]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e246] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e247]:
+                      - generic [ref=e248]: Jun 5, 20261 hour ago
+                  - row "CODE_OF_CONDUCT.md, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e249]:
+                    - cell "CODE_OF_CONDUCT.md, (File)" [ref=e250]:
+                      - generic [ref=e251]:
+                        - img [ref=e252]
+                        - link "CODE_OF_CONDUCT.md, (File)" [ref=e257] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/CODE_OF_CONDUCT.md
+                          - text: CODE_OF_CONDUCT.md
+                    - cell "Initial TinyLocal Tools MVP" [ref=e258]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e261] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e262]:
+                      - generic [ref=e263]: Jun 5, 20261 hour ago
+                  - row "CONTRIBUTING.md, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e264]:
+                    - cell "CONTRIBUTING.md, (File)" [ref=e265]:
+                      - generic [ref=e266]:
+                        - img [ref=e267]
+                        - link "CONTRIBUTING.md, (File)" [ref=e272] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/CONTRIBUTING.md
+                          - text: CONTRIBUTING.md
+                    - cell "Initial TinyLocal Tools MVP" [ref=e273]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e276] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e277]:
+                      - generic [ref=e278]: Jun 5, 20261 hour ago
+                  - row "LICENSE, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e279]:
+                    - cell "LICENSE, (File)" [ref=e280]:
+                      - generic [ref=e281]:
+                        - img [ref=e282]
+                        - link "LICENSE, (File)" [ref=e287] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/LICENSE
+                          - text: LICENSE
+                    - cell "Initial TinyLocal Tools MVP" [ref=e288]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e291] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e292]:
+                      - generic [ref=e293]: Jun 5, 20261 hour ago
+                  - row "README.md, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e294]:
+                    - cell "README.md, (File)" [ref=e295]:
+                      - generic [ref=e296]:
+                        - img [ref=e297]
+                        - link "README.md, (File)" [ref=e302] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/README.md
+                          - text: README.md
+                    - cell "Initial TinyLocal Tools MVP" [ref=e303]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e306] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e307]:
+                      - generic [ref=e308]: Jun 5, 20261 hour ago
+                  - row "SECURITY.md, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e309]:
+                    - cell "SECURITY.md, (File)" [ref=e310]:
+                      - generic [ref=e311]:
+                        - img [ref=e312]
+                        - link "SECURITY.md, (File)" [ref=e317] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/SECURITY.md
+                          - text: SECURITY.md
+                    - cell "Initial TinyLocal Tools MVP" [ref=e318]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e321] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e322]:
+                      - generic [ref=e323]: Jun 5, 20261 hour ago
+                  - row "index.html, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e324]:
+                    - cell "index.html, (File)" [ref=e325]:
+                      - generic [ref=e326]:
+                        - img [ref=e327]
+                        - link "index.html, (File)" [ref=e332] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/index.html
+                          - text: index.html
+                    - cell "Initial TinyLocal Tools MVP" [ref=e333]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e336] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e337]:
+                      - generic [ref=e338]: Jun 5, 20261 hour ago
+                  - row "launch_markdown_table_fixer.bat, (File) 対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする Jun 5, 202640 minutes ago" [ref=e339]:
+                    - cell "launch_markdown_table_fixer.bat, (File)" [ref=e340]:
+                      - generic [ref=e341]:
+                        - img [ref=e342]
+                        - link "launch_markdown_table_fixer.bat, (File)" [ref=e347] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/launch_markdown_table_fixer.bat
+                          - text: launch_markdown_table_fixer.bat
+                    - cell "対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする" [ref=e348]:
+                      - link "対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする" [ref=e351] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/3ebe505da43f50afbd0d236db613852b1eebc738
+                    - cell "Jun 5, 202640 minutes ago" [ref=e352]:
+                      - generic [ref=e353]: Jun 5, 202640 minutes ago
+                  - row "launch_pastefix.bat, (File) 対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする Jun 5, 202640 minutes ago" [ref=e354]:
+                    - cell "launch_pastefix.bat, (File)" [ref=e355]:
+                      - generic [ref=e356]:
+                        - img [ref=e357]
+                        - link "launch_pastefix.bat, (File)" [ref=e362] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/launch_pastefix.bat
+                          - text: launch_pastefix.bat
+                    - cell "対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする" [ref=e363]:
+                      - link "対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする" [ref=e366] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/3ebe505da43f50afbd0d236db613852b1eebc738
+                    - cell "Jun 5, 202640 minutes ago" [ref=e367]:
+                      - generic [ref=e368]: Jun 5, 202640 minutes ago
+                  - row "launch_safepaste.bat, (File) 対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする Jun 5, 202640 minutes ago" [ref=e369]:
+                    - cell "launch_safepaste.bat, (File)" [ref=e370]:
+                      - generic [ref=e371]:
+                        - img [ref=e372]
+                        - link "launch_safepaste.bat, (File)" [ref=e377] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/launch_safepaste.bat
+                          - text: launch_safepaste.bat
+                    - cell "対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする" [ref=e378]:
+                      - link "対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする" [ref=e381] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/3ebe505da43f50afbd0d236db613852b1eebc738
+                    - cell "Jun 5, 202640 minutes ago" [ref=e382]:
+                      - generic [ref=e383]: Jun 5, 202640 minutes ago
+                  - row "package-lock.json, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e384]:
+                    - cell "package-lock.json, (File)" [ref=e385]:
+                      - generic [ref=e386]:
+                        - img [ref=e387]
+                        - link "package-lock.json, (File)" [ref=e392] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/package-lock.json
+                          - text: package-lock.json
+                    - cell "Initial TinyLocal Tools MVP" [ref=e393]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e396] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e397]:
+                      - generic [ref=e398]: Jun 5, 20261 hour ago
+                  - row "package.json, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e399]:
+                    - cell "package.json, (File)" [ref=e400]:
+                      - generic [ref=e401]:
+                        - img [ref=e402]
+                        - link "package.json, (File)" [ref=e407] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/package.json
+                          - text: package.json
+                    - cell "Initial TinyLocal Tools MVP" [ref=e408]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e411] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e412]:
+                      - generic [ref=e413]: Jun 5, 20261 hour ago
+                  - row "run_setup_and_checks.bat, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e414]:
+                    - cell "run_setup_and_checks.bat, (File)" [ref=e415]:
+                      - generic [ref=e416]:
+                        - img [ref=e417]
+                        - link "run_setup_and_checks.bat, (File)" [ref=e422] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/run_setup_and_checks.bat
+                          - text: run_setup_and_checks.bat
+                    - cell "Initial TinyLocal Tools MVP" [ref=e423]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e426] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e427]:
+                      - generic [ref=e428]: Jun 5, 20261 hour ago
+                  - row "tsconfig.app.json, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e429]:
+                    - cell "tsconfig.app.json, (File)" [ref=e430]:
+                      - generic [ref=e431]:
+                        - img [ref=e432]
+                        - link "tsconfig.app.json, (File)" [ref=e437] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/tsconfig.app.json
+                          - text: tsconfig.app.json
+                    - cell "Initial TinyLocal Tools MVP" [ref=e438]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e441] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e442]:
+                      - generic [ref=e443]: Jun 5, 20261 hour ago
+                  - row "tsconfig.json, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e444]:
+                    - cell "tsconfig.json, (File)" [ref=e445]:
+                      - generic [ref=e446]:
+                        - img [ref=e447]
+                        - link "tsconfig.json, (File)" [ref=e452] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/tsconfig.json
+                          - text: tsconfig.json
+                    - cell "Initial TinyLocal Tools MVP" [ref=e453]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e456] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e457]:
+                      - generic [ref=e458]: Jun 5, 20261 hour ago
+                  - row "tsconfig.node.json, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e459]:
+                    - cell "tsconfig.node.json, (File)" [ref=e460]:
+                      - generic [ref=e461]:
+                        - img [ref=e462]
+                        - link "tsconfig.node.json, (File)" [ref=e467] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/tsconfig.node.json
+                          - text: tsconfig.node.json
+                    - cell "Initial TinyLocal Tools MVP" [ref=e468]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e471] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e472]:
+                      - generic [ref=e473]: Jun 5, 20261 hour ago
+                  - row "vite.config.mjs, (File) Initial TinyLocal Tools MVP Jun 5, 20261 hour ago" [ref=e474]:
+                    - cell "vite.config.mjs, (File)" [ref=e475]:
+                      - generic [ref=e476]:
+                        - img [ref=e477]
+                        - link "vite.config.mjs, (File)" [ref=e482] [cursor=pointer]:
+                          - /url: /kota-e/tinylocal-tools/blob/main/vite.config.mjs
+                          - text: vite.config.mjs
+                    - cell "Initial TinyLocal Tools MVP" [ref=e483]:
+                      - link "Initial TinyLocal Tools MVP" [ref=e486] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                    - cell "Jun 5, 20261 hour ago" [ref=e487]:
+                      - generic [ref=e488]: Jun 5, 20261 hour ago
+            - generic [ref=e490]:
+              - generic [ref=e491]:
+                - heading "Repository files navigation" [level=2] [ref=e492]
+                - navigation "Repository files" [ref=e493]:
+                  - list [ref=e494]:
+                    - listitem [ref=e495]:
+                      - link "README" [ref=e496] [cursor=pointer]:
+                        - /url: "#"
+                        - generic [ref=e497]: README
+                    - listitem [ref=e498]:
+                      - link "Code of conduct" [ref=e499] [cursor=pointer]:
+                        - /url: "#"
+                        - generic [ref=e500]: Code of conduct
+                    - listitem [ref=e501]:
+                      - link "Contributing" [ref=e502] [cursor=pointer]:
+                        - /url: "#"
+                        - generic [ref=e503]: Contributing
+                    - listitem [ref=e504]:
+                      - link "MIT license" [ref=e505] [cursor=pointer]:
+                        - /url: "#"
+                        - generic [ref=e506]: MIT license
+                    - listitem [ref=e507]:
+                      - link "Security" [ref=e508] [cursor=pointer]:
+                        - /url: "#"
+                        - generic [ref=e509]: Security
+                - button "Outline" [ref=e510] [cursor=pointer]:
+                  - img [ref=e511]
+              - article [ref=e514]:
+                - generic [ref=e515]:
+                  - heading "TinyLocal Tools" [level=1] [ref=e516]
+                  - 'link "Permalink: TinyLocal Tools" [ref=e517] [cursor=pointer]':
+                    - /url: "#tinylocal-tools"
+                    - img [ref=e518]
+                - paragraph [ref=e520]: TinyLocal Tools is a local-first browser app for cleaning, protecting, and sharing text. It is a small open-source MVP with three practical tools in one static web app.
+                - paragraph [ref=e521]: It helps people who copy text from PDFs, websites, emails, documents, AI tools, support tickets, GitHub issues, and notes.
+                - generic [ref=e522]:
+                  - heading "Tools" [level=2] [ref=e523]
+                  - 'link "Permalink: Tools" [ref=e524] [cursor=pointer]':
+                    - /url: "#tools"
+                    - img [ref=e525]
+                - list [ref=e527]:
+                  - listitem [ref=e528]:
+                    - strong [ref=e529]: PasteFix
+                    - text: cleans messy copied text while trying to preserve paragraph meaning.
+                  - listitem [ref=e530]:
+                    - strong [ref=e531]: SafePaste
+                    - text: masks common sensitive patterns before text is shared.
+                  - listitem [ref=e532]:
+                    - strong [ref=e533]: Markdown Table Fixer
+                    - text: repairs and formats Markdown, CSV, and TSV tables.
+                - generic [ref=e534]:
+                  - heading "Privacy" [level=2] [ref=e535]
+                  - 'link "Permalink: Privacy" [ref=e536] [cursor=pointer]':
+                    - /url: "#privacy"
+                    - img [ref=e537]
+                - paragraph [ref=e539]: TinyLocal Tools runs in the browser. User text and files are not uploaded. The app has no backend, database, telemetry, analytics, accounts, scraping, or external AI API calls.
+                - paragraph [ref=e540]: SafePaste is best-effort. It can miss sensitive information, so users should review output before sharing it.
+                - generic [ref=e541]:
+                  - heading "Screenshots" [level=2] [ref=e542]
+                  - 'link "Permalink: Screenshots" [ref=e543] [cursor=pointer]':
+                    - /url: "#screenshots"
+                    - img [ref=e544]
+                - paragraph [ref=e546]: Screenshots will be added after the first public release.
+                - generic [ref=e547]:
+                  - heading "Principles" [level=2] [ref=e548]
+                  - 'link "Permalink: Principles" [ref=e549] [cursor=pointer]':
+                    - /url: "#principles"
+                    - img [ref=e550]
+                - list [ref=e552]:
+                  - listitem [ref=e553]: "Local-first: text should stay on the user's device."
+                  - listitem [ref=e554]: "Private by default: no tracking, analytics, or telemetry."
+                  - listitem [ref=e555]: "Simple tools: each feature should be easy to understand and undo."
+                  - listitem [ref=e556]: "No external AI APIs: features must not send user text to remote AI services."
+                - generic [ref=e557]:
+                  - heading "Quick Start" [level=2] [ref=e558]
+                  - 'link "Permalink: Quick Start" [ref=e559] [cursor=pointer]':
+                    - /url: "#quick-start"
+                    - img [ref=e560]
+                - paragraph [ref=e562]: "Install dependencies:"
+                - generic [ref=e563]:
+                  - generic [ref=e564]: npm install
+                  - button "Copy code to clipboard" [ref=e566] [cursor=pointer]:
+                    - img [ref=e567]
+                - paragraph [ref=e570]:
+                  - text: After
+                  - code [ref=e571]: package-lock.json
+                  - text: exists,
+                  - code [ref=e572]: npm ci
+                  - text: is the recommended repeatable install command.
+                - paragraph [ref=e573]: "Run the app locally:"
+                - generic [ref=e574]:
+                  - generic [ref=e575]: npm run dev
+                  - button "Copy code to clipboard" [ref=e577] [cursor=pointer]:
+                    - img [ref=e578]
+                - generic [ref=e581]:
+                  - heading "Development Commands" [level=2] [ref=e582]
+                  - 'link "Permalink: Development Commands" [ref=e583] [cursor=pointer]':
+                    - /url: "#development-commands"
+                    - img [ref=e584]
+                - generic [ref=e586]:
+                  - generic [ref=e587]: npm run lint --if-present npm test npm run build
+                  - button "Copy code to clipboard" [ref=e589] [cursor=pointer]:
+                    - img [ref=e590]
+                - generic [ref=e593]:
+                  - heading "Build" [level=2] [ref=e594]
+                  - 'link "Permalink: Build" [ref=e595] [cursor=pointer]':
+                    - /url: "#build"
+                    - img [ref=e596]
+                - generic [ref=e598]:
+                  - generic [ref=e599]: npm run build
+                  - button "Copy code to clipboard" [ref=e601] [cursor=pointer]:
+                    - img [ref=e602]
+                - paragraph [ref=e605]:
+                  - text: The built static files are placed in
+                  - code [ref=e606]: dist/
+                  - text: .
+                - generic [ref=e607]:
+                  - heading "Test" [level=2] [ref=e608]
+                  - 'link "Permalink: Test" [ref=e609] [cursor=pointer]':
+                    - /url: "#test"
+                    - img [ref=e610]
+                - generic [ref=e612]:
+                  - generic [ref=e613]: npm test
+                  - button "Copy code to clipboard" [ref=e615] [cursor=pointer]:
+                    - img [ref=e616]
+                - generic [ref=e619]:
+                  - heading "Deployment" [level=2] [ref=e620]
+                  - 'link "Permalink: Deployment" [ref=e621] [cursor=pointer]':
+                    - /url: "#deployment"
+                    - img [ref=e622]
+                - paragraph [ref=e624]:
+                  - text: TinyLocal Tools is a static app. It can be deployed to GitHub Pages or any static host by building the app and publishing the
+                  - code [ref=e625]: dist/
+                  - text: folder.
+                - generic [ref=e626]:
+                  - heading "Contributing" [level=2] [ref=e627]
+                  - 'link "Permalink: Contributing" [ref=e628] [cursor=pointer]':
+                    - /url: "#contributing"
+                    - img [ref=e629]
+                - paragraph [ref=e631]:
+                  - text: Issues and pull requests are welcome. Please read
+                  - code [ref=e632]: CONTRIBUTING.md
+                  - text: before sending changes.
+                - generic [ref=e633]:
+                  - heading "Security" [level=2] [ref=e634]
+                  - 'link "Permalink: Security" [ref=e635] [cursor=pointer]':
+                    - /url: "#security"
+                    - img [ref=e636]
+                - paragraph [ref=e638]:
+                  - text: Please read
+                  - code [ref=e639]: SECURITY.md
+                  - text: before reporting security problems. Do not paste secrets into public GitHub issues.
+                - generic [ref=e640]:
+                  - heading "Japanese" [level=2] [ref=e641]
+                  - 'link "Permalink: Japanese" [ref=e642] [cursor=pointer]':
+                    - /url: "#japanese"
+                    - img [ref=e643]
+                - paragraph [ref=e645]: TinyLocal Tools は、文章をきれいにし、見せたくない情報をかくし、共有しやすくする小さなブラウザアプリです。 文章はブラウザ内で処理され、サーバーへアップロードされません。
+                - generic [ref=e646]:
+                  - heading "License" [level=2] [ref=e647]
+                  - 'link "Permalink: License" [ref=e648] [cursor=pointer]':
+                    - /url: "#license"
+                    - img [ref=e649]
+                - paragraph [ref=e651]:
+                  - text: MIT. See
+                  - code [ref=e652]: LICENSE
+                  - text: .
+        - generic [ref=e656]:
+          - generic [ref=e659]:
+            - heading "About" [level=2] [ref=e660]
+            - paragraph [ref=e661]: Local-first tools for cleaning, protecting, and sharing text.
+            - heading "Resources" [level=3] [ref=e662]
+            - link "Readme" [ref=e664] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e665]
+              - text: Readme
+            - heading "License" [level=3] [ref=e667]
+            - link "MIT license" [ref=e669] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+              - img [ref=e670]
+              - text: MIT license
+            - heading "Code of conduct" [level=3] [ref=e672]
+            - link "Code of conduct" [ref=e674] [cursor=pointer]:
+              - /url: "#coc-ov-file"
+              - img [ref=e675]
+              - text: Code of conduct
+            - heading "Contributing" [level=3] [ref=e677]
+            - link "Contributing" [ref=e679] [cursor=pointer]:
+              - /url: "#contributing-ov-file"
+              - img [ref=e680]
+              - text: Contributing
+            - heading "Security policy" [level=3] [ref=e682]
+            - link "Security policy" [ref=e684] [cursor=pointer]:
+              - /url: "#security-ov-file"
+              - img [ref=e685]
+              - text: Security policy
+            - link "Activity" [ref=e688] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/activity
+              - img [ref=e689]
+              - text: Activity
+            - heading "Stars" [level=3] [ref=e691]
+            - link "0 stars" [ref=e693] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/stargazers
+              - img [ref=e694]
+              - strong [ref=e696]: "0"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e697]
+            - link "0 watching" [ref=e699] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/watchers
+              - img [ref=e700]
+              - strong [ref=e702]: "0"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e703]
+            - link "0 forks" [ref=e705] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/forks
+              - img [ref=e706]
+              - strong [ref=e708]: "0"
+              - text: forks
+            - link "Report repository" [ref=e710] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fkota-e%2Ftinylocal-tools&report=kota-e+%28user%29
+          - generic [ref=e712]:
+            - heading "Releases" [level=2] [ref=e713]:
+              - link "Releases" [ref=e714] [cursor=pointer]:
+                - /url: /kota-e/tinylocal-tools/releases
+            - generic [ref=e715]: No releases published
+          - generic [ref=e717]:
+            - heading "Packages" [level=2] [ref=e718]:
+              - link "Packages" [ref=e719] [cursor=pointer]:
+                - /url: /users/kota-e/packages?repo_name=tinylocal-tools
+            - generic [ref=e720]: No packages published
+          - generic [ref=e722]:
+            - heading "Contributors 1" [level=2] [ref=e723]:
+              - link "Contributors 1" [ref=e724] [cursor=pointer]:
+                - /url: /kota-e/tinylocal-tools/graphs/contributors
+                - text: Contributors
+                - generic "1" [ref=e725]
+            - list [ref=e726]:
+              - listitem [ref=e727]:
+                - link "@kota-e" [ref=e728] [cursor=pointer]:
+                  - /url: https://github.com/kota-e
+                  - img "@kota-e" [ref=e729]
+                - link "kota-e" [ref=e731] [cursor=pointer]:
+                  - /url: https://github.com/kota-e
+                  - strong [ref=e732]: kota-e
+          - generic [ref=e734]:
+            - heading "Languages" [level=2] [ref=e735]
+            - list [ref=e742]:
+              - listitem [ref=e743]:
+                - link "TypeScript 78.4%" [ref=e744] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/search?l=typescript
+                  - img [ref=e745]
+                  - generic [ref=e747]: TypeScript
+                  - generic [ref=e748]: 78.4%
+              - listitem [ref=e749]:
+                - link "CSS 13.7%" [ref=e750] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/search?l=css
+                  - img [ref=e751]
+                  - generic [ref=e753]: CSS
+                  - generic [ref=e754]: 13.7%
+              - listitem [ref=e755]:
+                - link "Batchfile 6.8%" [ref=e756] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/search?l=batchfile
+                  - img [ref=e757]
+                  - generic [ref=e759]: Batchfile
+                  - generic [ref=e760]: 6.8%
+              - listitem [ref=e761]:
+                - generic [ref=e762]:
+                  - img [ref=e763]
+                  - generic [ref=e765]: Other
+                  - generic [ref=e766]: 1.1%
+  - contentinfo [ref=e768]:
+    - heading "Footer" [level=2] [ref=e769]
+    - generic [ref=e770]:
+      - generic [ref=e771]:
+        - link "GitHub Homepage" [ref=e772] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e773]
+        - generic [ref=e775]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e776]:
+        - heading "Footer navigation" [level=3] [ref=e777]
+        - list "Footer navigation" [ref=e778]:
+          - listitem [ref=e779]:
+            - link "Terms" [ref=e780] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e781]:
+            - link "Privacy" [ref=e782] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e783]:
+            - link "Security" [ref=e784] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e785]:
+            - link "Status" [ref=e786] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e787]:
+            - link "Community" [ref=e788] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e789]:
+            - link "Docs" [ref=e790] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e791]:
+            - link "Contact" [ref=e792] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e793]:
+            - button "Manage cookies" [ref=e795] [cursor=pointer]
+          - listitem [ref=e796]:
+            - button "Do not share my personal information" [ref=e798] [cursor=pointer]

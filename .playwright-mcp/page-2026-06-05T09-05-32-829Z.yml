@@ -1,0 +1,286 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e9]:
+        - button "Toggle navigation" [ref=e11] [cursor=pointer]
+        - link "Homepage" [ref=e17] [cursor=pointer]:
+          - /url: /
+          - img [ref=e18]
+        - generic [ref=e20]:
+          - link "Sign in" [ref=e21] [cursor=pointer]:
+            - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fkota-e%2Ftinylocal-tools%2Factions
+          - button "Appearance settings" [ref=e24] [cursor=pointer]:
+            - img
+  - main [ref=e28]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - img [ref=e33]
+          - link "kota-e" [ref=e36] [cursor=pointer]:
+            - /url: /kota-e
+          - generic [ref=e37]: /
+          - strong [ref=e38]:
+            - link "tinylocal-tools" [ref=e39] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools
+          - generic [ref=e40]: Public
+        - generic [ref=e41]:
+          - list:
+            - listitem [ref=e42]:
+              - link "You must be signed in to change notification settings" [ref=e43] [cursor=pointer]:
+                - /url: /login?return_to=%2Fkota-e%2Ftinylocal-tools
+                - img [ref=e44]
+                - text: Notifications
+            - listitem [ref=e46]:
+              - link "Fork 0" [ref=e47] [cursor=pointer]:
+                - /url: /login?return_to=%2Fkota-e%2Ftinylocal-tools
+                - img [ref=e48]
+                - text: Fork
+                - generic "0" [ref=e50]
+            - listitem [ref=e51]:
+              - link "You must be signed in to star a repository" [ref=e53] [cursor=pointer]:
+                - /url: /login?return_to=%2Fkota-e%2Ftinylocal-tools
+                - img [ref=e54]
+                - text: Star
+                - generic "0 users starred this repository" [ref=e56]: "0"
+      - navigation "Repository" [ref=e57]:
+        - list [ref=e58]:
+          - listitem [ref=e59]:
+            - link "Code" [ref=e60] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools
+              - img [ref=e61]
+              - generic [ref=e63]: Code
+          - listitem [ref=e64]:
+            - link "Issues" [ref=e65] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/issues
+              - img [ref=e66]
+              - generic [ref=e69]: Issues
+          - listitem [ref=e70]:
+            - link "Pull requests" [ref=e71] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/pulls
+              - img [ref=e72]
+              - generic [ref=e74]: Pull requests
+          - listitem [ref=e75]:
+            - link "Actions" [ref=e76] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/actions
+              - img [ref=e77]
+              - generic [ref=e79]: Actions
+          - listitem [ref=e80]:
+            - link "Projects" [ref=e81] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/projects
+              - img [ref=e82]
+              - generic [ref=e84]: Projects
+          - listitem [ref=e85]:
+            - link "Security and quality" [ref=e86] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/security
+              - img [ref=e87]
+              - generic [ref=e89]: Security and quality
+          - listitem [ref=e90]:
+            - link "Insights" [ref=e91] [cursor=pointer]:
+              - /url: /kota-e/tinylocal-tools/pulse
+              - img [ref=e92]
+              - generic [ref=e94]: Insights
+    - generic [ref=e96]:
+      - 'heading "Actions: kota-e/tinylocal-tools" [level=1] [ref=e97]'
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - heading "Actions" [level=2] [ref=e103]
+          - navigation "Actions Workflows" [ref=e107]:
+            - list [ref=e109]:
+              - listitem [ref=e110]:
+                - link "All workflows" [ref=e111] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/actions
+                  - generic [ref=e112]: All workflows
+              - listitem [ref=e113]
+              - listitem [ref=e114]:
+                - list "Workflows" [ref=e118]:
+                  - listitem [ref=e119]:
+                    - link "CI" [ref=e120] [cursor=pointer]:
+                      - /url: /kota-e/tinylocal-tools/actions/workflows/ci.yml
+                      - generic [ref=e121]: CI
+              - listitem [ref=e122]
+              - listitem [ref=e123]:
+                - generic [ref=e126]:
+                  - heading "Management" [level=3] [ref=e128]
+                  - list "Management" [ref=e129]:
+                    - listitem [ref=e130]:
+                      - link "Caches" [ref=e131] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/actions/caches
+                        - generic:
+                          - img
+                        - generic [ref=e132]: Caches
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - generic [ref=e137]:
+              - heading "All workflows" [level=2] [ref=e139]:
+                - generic [ref=e141]: All workflows
+              - search [ref=e145]:
+                - combobox "Filter workflow runs" [ref=e146]
+                - img
+            - generic [ref=e147]: Showing runs from all workflows
+          - strong [ref=e150]: 5 workflow runs
+          - generic [ref=e151]:
+            - generic [ref=e153]:
+              - button "Workflow" [ref=e157] [cursor=pointer]:
+                - generic [ref=e159]: Workflow
+                - generic:
+                  - img
+              - button "Event" [ref=e163] [cursor=pointer]:
+                - generic [ref=e165]: Event
+                - generic:
+                  - img
+              - button "Status" [ref=e169] [cursor=pointer]:
+                - generic [ref=e171]: Status
+                - generic:
+                  - img
+              - button "Branch" [ref=e175] [cursor=pointer]:
+                - generic [ref=e177]: Branch
+                - generic:
+                  - img
+              - button "Actor" [ref=e181] [cursor=pointer]:
+                - generic [ref=e183]: Actor
+                - generic:
+                  - img
+            - generic [ref=e184]:
+              - generic [ref=e186]:
+                - generic [ref=e187]:
+                  - 'link "completed successfully: Run 5 of CI. Ignore local helper artifacts" [ref=e188] [cursor=pointer]':
+                    - /url: /kota-e/tinylocal-tools/actions/runs/27005261276
+                    - img "completed successfully:" [ref=e190]
+                    - generic [ref=e192]: Ignore local helper artifacts
+                  - generic [ref=e193]:
+                    - text: "CI #5:"
+                    - generic [ref=e194]:
+                      - text: Commit
+                      - link "1b7c17e" [ref=e195] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/1b7c17e4aadfd96ae8757d4a30c012fbea91f4c2
+                      - text: pushed by
+                      - link "kota-e" [ref=e196] [cursor=pointer]:
+                        - /url: /kota-e
+                - link "main" [ref=e198] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/tree/refs/heads/main
+                - generic [ref=e200]:
+                  - generic [ref=e201]:
+                    - generic [ref=e202]:
+                      - img [ref=e204]
+                      - generic "Jun 5, 2026, 5:49 PM GMT+9" [ref=e206]: 15 minutes ago
+                    - generic [ref=e207]:
+                      - img "Run duration" [ref=e208]
+                      - text: 24s
+                  - group [ref=e211]:
+                    - generic "Show options" [ref=e212] [cursor=pointer]:
+                      - img "Show options" [ref=e213]
+              - generic [ref=e216]:
+                - generic [ref=e217]:
+                  - 'link "completed successfully: Run 4 of CI. 出力欄のコピー按钮を枠内に収める" [ref=e218] [cursor=pointer]':
+                    - /url: /kota-e/tinylocal-tools/actions/runs/27005178954
+                    - img "completed successfully:" [ref=e220]
+                    - generic [ref=e222]: 出力欄のコピー按钮を枠内に収める
+                  - generic [ref=e223]:
+                    - text: "CI #4:"
+                    - generic [ref=e224]:
+                      - text: Commit
+                      - link "ca86fa8" [ref=e225] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/ca86fa81ba7734d42798c23223985c5ccab4f342
+                      - text: pushed by
+                      - link "kota-e" [ref=e226] [cursor=pointer]:
+                        - /url: /kota-e
+                - link "main" [ref=e228] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/tree/refs/heads/main
+                - generic [ref=e230]:
+                  - generic [ref=e231]:
+                    - generic [ref=e232]:
+                      - img [ref=e234]
+                      - generic "Jun 5, 2026, 5:48 PM GMT+9" [ref=e236]: 17 minutes ago
+                    - generic [ref=e237]:
+                      - img "Run duration" [ref=e238]
+                      - text: 19s
+                  - group [ref=e241]:
+                    - generic "Show options" [ref=e242] [cursor=pointer]:
+                      - img "Show options" [ref=e243]
+              - generic [ref=e246]:
+                - generic [ref=e247]:
+                  - 'link "completed successfully: Run 3 of CI. Ignore local helper artifacts" [ref=e248] [cursor=pointer]':
+                    - /url: /kota-e/tinylocal-tools/actions/runs/27004539569
+                    - img "completed successfully:" [ref=e250]
+                    - generic [ref=e252]: Ignore local helper artifacts
+                  - generic [ref=e253]:
+                    - text: "CI #3:"
+                    - generic [ref=e254]:
+                      - text: Commit
+                      - link "7ada16d" [ref=e255] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7ada16dbc709ffeaf7ab40fea2fae8349885c796
+                      - text: pushed by
+                      - link "kota-e" [ref=e256] [cursor=pointer]:
+                        - /url: /kota-e
+                - link "main" [ref=e258] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/tree/refs/heads/main
+                - generic [ref=e260]:
+                  - generic [ref=e261]:
+                    - generic [ref=e262]:
+                      - img [ref=e264]
+                      - generic "Jun 5, 2026, 5:33 PM GMT+9" [ref=e266]: 32 minutes ago
+                    - generic [ref=e267]:
+                      - img "Run duration" [ref=e268]
+                      - text: 19s
+                  - group [ref=e271]:
+                    - generic "Show options" [ref=e272] [cursor=pointer]:
+                      - img "Show options" [ref=e273]
+              - generic [ref=e276]:
+                - generic [ref=e277]:
+                  - 'link "completed successfully: Run 2 of CI. 対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする" [ref=e278] [cursor=pointer]':
+                    - /url: /kota-e/tinylocal-tools/actions/runs/27004236255
+                    - img "completed successfully:" [ref=e280]
+                    - generic [ref=e282]: 対応する App.tsxで起動URLからタブを開けるようにしてbat連携を楽にする
+                  - generic [ref=e283]:
+                    - text: "CI #2:"
+                    - generic [ref=e284]:
+                      - text: Commit
+                      - link "3ebe505" [ref=e285] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/3ebe505da43f50afbd0d236db613852b1eebc738
+                      - text: pushed by
+                      - link "kota-e" [ref=e286] [cursor=pointer]:
+                        - /url: /kota-e
+                - link "main" [ref=e288] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/tree/refs/heads/main
+                - generic [ref=e290]:
+                  - generic [ref=e291]:
+                    - generic [ref=e292]:
+                      - img [ref=e294]
+                      - generic "Jun 5, 2026, 5:26 PM GMT+9" [ref=e296]: 38 minutes ago
+                    - generic [ref=e297]:
+                      - img "Run duration" [ref=e298]
+                      - text: 22s
+                  - group [ref=e301]:
+                    - generic "Show options" [ref=e302] [cursor=pointer]:
+                      - img "Show options" [ref=e303]
+              - generic [ref=e306]:
+                - generic [ref=e307]:
+                  - 'link "completed successfully: Run 1 of CI. Initial TinyLocal Tools MVP" [ref=e308] [cursor=pointer]':
+                    - /url: /kota-e/tinylocal-tools/actions/runs/27002364599
+                    - img "completed successfully:" [ref=e310]
+                    - generic [ref=e312]: Initial TinyLocal Tools MVP
+                  - generic [ref=e313]:
+                    - text: "CI #1:"
+                    - generic [ref=e314]:
+                      - text: Commit
+                      - link "7b3db7f" [ref=e315] [cursor=pointer]:
+                        - /url: /kota-e/tinylocal-tools/commit/7b3db7fede04717d905ee241a2afed19e3f2e0d1
+                      - text: pushed by
+                      - link "kota-e" [ref=e316] [cursor=pointer]:
+                        - /url: /kota-e
+                - link "main" [ref=e318] [cursor=pointer]:
+                  - /url: /kota-e/tinylocal-tools/tree/refs/heads/main
+                - generic [ref=e320]:
+                  - generic [ref=e321]:
+                    - generic [ref=e322]:
+                      - img [ref=e324]
+                      - generic "Jun 5, 2026, 4:43 PM GMT+9" [ref=e326]: Today at 4:43 PM
+                    - generic [ref=e327]:
+                      - img "Run duration" [ref=e328]
+                      - text: 19s
+                  - group [ref=e331]:
+                    - generic "Show options" [ref=e332] [cursor=pointer]:
+                      - img "Show options" [ref=e333]
