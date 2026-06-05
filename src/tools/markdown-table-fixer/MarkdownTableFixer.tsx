@@ -103,7 +103,7 @@ export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
             )}
           </div>
         </div>
-        <div>
+        <div className="output-column">
           <TextAreaPanel id="table-output" label={t.output} value={result.markdown} readOnly />
           <CopyButton text={result.markdown} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
         </div>

@@ -95,7 +95,7 @@ export function SafePaste({ t }: SafePasteProps) {
             </dl>
           </div>
         </div>
-        <div>
+        <div className="output-column">
           <TextAreaPanel id="safepaste-output" label={t.output} value={result.output} readOnly />
           <CopyButton text={result.output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
         </div>

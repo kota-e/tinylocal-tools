@@ -126,7 +126,7 @@ export function PasteFix({ t }: PasteFixProps) {
             </div>
           </dl>
         </div>
-        <div>
+        <div className="output-column">
           <TextAreaPanel id="pastefix-output" label={t.output} value={result.output} readOnly />
           <CopyButton text={result.output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
         </div>

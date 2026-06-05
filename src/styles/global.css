@@ -201,6 +201,22 @@ input:focus-visible {
   background: #f8fafc;
 }
 
+.output-column {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.output-column .textarea-panel {
+  min-height: 0;
+  flex: 1 1 auto;
+}
+
+.output-column .textarea-panel textarea {
+  flex: 1 1 auto;
+}
+
 .control-panel {
   display: flex;
   flex-direction: column;
@@ -373,7 +389,8 @@ input:focus-visible {
 }
 
 .copy-group {
-  margin-top: 10px;
+  margin-top: 0;
+  padding-bottom: 2px;
 }
 
 .preview-panel {
