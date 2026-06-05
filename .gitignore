@@ -18,6 +18,10 @@ pnpm-debug.log*
 .npm-cache-user/
 setup-checks.log
 dev-server.log
+push-to-github.log
+commit-and-push-local.log
+push_to_github.bat
+commit_and_push_local.bat
 
 # Environment files
 .env
