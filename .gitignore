@@ -17,6 +17,7 @@ pnpm-debug.log*
 .npm-cache-install/
 .npm-cache-user/
 setup-checks.log
+dev-server.log
 
 # Environment files
 .env

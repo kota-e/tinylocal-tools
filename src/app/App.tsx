@@ -7,9 +7,20 @@ import { SafePaste } from '../tools/safepaste/SafePasteTool';
 
 type TabId = 'pastefix' | 'safepaste' | 'tablefixer';
 
+const tabIds: TabId[] = ['pastefix', 'safepaste', 'tablefixer'];
+
+function readInitialTab(): TabId {
+  if (typeof window === 'undefined') {
+    return 'pastefix';
+  }
+
+  const requestedTool = new URLSearchParams(window.location.search).get('tool');
+  return tabIds.find((tabId) => tabId === requestedTool) ?? 'pastefix';
+}
+
 export function App() {
   const { language, setLanguage, t } = useI18n();
-  const [activeTab, setActiveTab] = useState<TabId>('pastefix');
+  const [activeTab, setActiveTab] = useState<TabId>(readInitialTab);
   const tabs: { id: TabId; label: string }[] = [
     { id: 'pastefix', label: t.pastefix },
     { id: 'safepaste', label: t.safepaste },
@@ -25,7 +36,11 @@ export function App() {
       onLanguageChange={setLanguage}
       tabs={tabs}
       activeTab={activeTab}
-      onTabChange={(id) => setActiveTab(id as TabId)}
+      onTabChange={(id) => {
+        const nextTab = id as TabId;
+        setActiveTab(nextTab);
+        window.history.replaceState(null, '', `?tool=${nextTab}`);
+      }}
     >
       <div id={`panel-${activeTab}`} role="tabpanel" aria-labelledby={`tab-${activeTab}`}>
         {activeTab === 'pastefix' ? <PasteFix t={t} /> : null}
