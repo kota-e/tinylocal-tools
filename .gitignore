@@ -24,6 +24,8 @@ push_to_github.bat
 commit_and_push_local.bat
 fix_codex_push_settings.bat
 fix-codex-push-settings.log
+login_github_and_push.bat
+login-github-and-push.log
 
 # Environment files
 .env
