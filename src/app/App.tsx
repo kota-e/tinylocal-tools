@@ -26,12 +26,22 @@ export function App() {
     { id: 'safepaste', label: t.safepaste },
     { id: 'tablefixer', label: t.tablefixer },
   ];
+  const toolSummaries = [
+    { id: 'pastefix', name: t.pastefix, summary: t.pastefixSummary },
+    { id: 'safepaste', name: t.safepaste, summary: t.safepasteSummary },
+    { id: 'tablefixer', name: t.tablefixer, summary: t.tablefixerSummary },
+  ];
 
   return (
     <Layout
       appName={t.appName}
       tagline={t.tagline}
+      intro={t.intro}
       privacy={t.privacy}
+      privacyTitle={t.privacyTitle}
+      privacyItems={[t.privacyBrowser, t.privacyNoUpload, t.privacyNoTracking]}
+      toolSummaryLabel={t.toolSummaryLabel}
+      toolSummaries={toolSummaries}
       language={language}
       onLanguageChange={setLanguage}
       tabs={tabs}

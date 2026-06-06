@@ -6,6 +6,10 @@ This project follows semantic versioning when releases are published.
 
 ## Unreleased
 
+- No unreleased changes yet.
+
+## v0.1.0 - 2026-06-06
+
 - Added the TinyLocal Tools React app shell with three working tabs.
 - Added PasteFix, SafePaste, and Markdown Table Fixer core logic.
 - Added unit tests for the core text-processing tools.

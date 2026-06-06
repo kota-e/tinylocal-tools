@@ -1,40 +1,97 @@
 # TinyLocal Tools
 
-TinyLocal Tools is a local-first browser app for cleaning, protecting, and
-sharing text. It is a small open-source MVP with three practical tools in one
-static web app.
+TinyLocal Tools is a small, local-first browser app for people who need to clean,
+mask, and reshape text before they paste or share it.
 
-It helps people who copy text from PDFs, websites, emails, documents, AI tools,
-support tickets, GitHub issues, and notes.
+It includes three tools:
 
-## Tools
+- **PasteFix**: clean messy copied text from PDFs, websites, emails, and notes.
+- **SafePaste**: mask common sensitive information before sharing text.
+- **Markdown Table Fixer**: repair and format Markdown, CSV, and TSV tables.
 
-- **PasteFix** cleans messy copied text while trying to preserve paragraph
-  meaning.
-- **SafePaste** masks common sensitive patterns before text is shared.
-- **Markdown Table Fixer** repairs and formats Markdown, CSV, and TSV tables.
+TinyLocal Tools is open source, static, and made to run in your browser.
 
-## Privacy
+## Privacy And Safety
 
-TinyLocal Tools runs in the browser. User text and files are not uploaded. The
-app has no backend, database, telemetry, analytics, accounts, scraping, or
-external AI API calls.
+TinyLocal Tools is designed to keep your text on your device by default.
 
-SafePaste is best-effort. It can miss sensitive information, so users should
-review output before sharing it.
+- No backend
+- No database
+- No analytics
+- No telemetry
+- No accounts
+- No scraping
+- No external AI API calls
+- No hidden upload of your text or files
 
-## Screenshots
+The app code works in the browser. It does not send your pasted text to a server.
+If you host the app somewhere, that host may still keep normal web access logs,
+but TinyLocal Tools itself does not track users or store input history.
 
-Screenshots will be added after the first public release.
+**SafePaste is best-effort.** It can help hide common patterns like email
+addresses, phone numbers, API-key-like text, and other risky snippets, but it is
+not perfect anonymization. Always review the result before sharing it.
 
-## Principles
+## Japanese Explanation
 
-- Local-first: text should stay on the user's device.
-- Private by default: no tracking, analytics, or telemetry.
-- Simple tools: each feature should be easy to understand and undo.
-- No external AI APIs: features must not send user text to remote AI services.
+TinyLocal Tools は、文章をきれいにしたり、見せたくない情報をかくしたり、
+表を直したりする、小さなブラウザアプリです。
 
-## Quick Start
+文章は、ふつうはあなたのブラウザの中だけで処理されます。サーバー、外部AI、
+データベース、アクセス解析には送りません。
+
+SafePaste は「できるだけ見つけてかくす」道具です。完璧ではないので、
+共有する前に、結果を自分の目で確認してください。
+
+## Who This Is For
+
+TinyLocal Tools is for:
+
+- Writers, researchers, students, and support teams who copy text from many places.
+- People who want to clean text before pasting it into another app.
+- People who need a quick privacy check before sharing text with others.
+- Developers and documentation writers who often fix Markdown tables.
+- Anyone who wants simple text tools without accounts, tracking, or server upload.
+
+## Use Cases
+
+- Clean text before pasting it into AI tools.
+- Fix copied PDF or website text that has broken lines or odd spacing.
+- Mask sensitive information before sharing a message, ticket, bug report, or note.
+- Fix Markdown, CSV, or TSV tables so they are easier to read and paste.
+- Prepare cleaner text for email, chat, documentation, GitHub issues, or notes.
+
+## Screenshots And Demo GIFs
+
+Actual screenshots and demo GIFs will be added as the public release page is
+prepared.
+
+| Tool | Placeholder |
+| --- | --- |
+| PasteFix | Screenshot placeholder: Paste messy text, then copy cleaned text. |
+| SafePaste | Screenshot placeholder: Mask sensitive-looking text before sharing. |
+| Markdown Table Fixer | Screenshot placeholder: Repair and format a pasted table. |
+| Full app demo | Demo GIF placeholder: Switch between the three tools. |
+
+## The Tools
+
+### PasteFix
+
+PasteFix helps clean copied text that has broken lines, extra spaces, or strange
+paragraph breaks. It is useful when copying from PDFs, web pages, emails, and
+documents.
+
+### SafePaste
+
+SafePaste helps mask common sensitive patterns before you share text. It is for
+reducing risk, not for proving that text is fully anonymous.
+
+### Markdown Table Fixer
+
+Markdown Table Fixer helps repair and align Markdown tables. It can also help
+turn CSV or TSV table text into readable Markdown.
+
+## How To Run It Locally
 
 Install dependencies:
 
@@ -42,16 +99,21 @@ Install dependencies:
 npm install
 ```
 
-After `package-lock.json` exists, `npm ci` is the recommended repeatable
-install command.
-
-Run the app locally:
+Run the app:
 
 ```sh
 npm run dev
 ```
 
-## Development Commands
+Build the static app:
+
+```sh
+npm run build
+```
+
+The built files are placed in `dist/`.
+
+## Development Checks
 
 ```sh
 npm run lint --if-present
@@ -59,23 +121,9 @@ npm test
 npm run build
 ```
 
-## Build
-
-```sh
-npm run build
-```
-
-The built static files are placed in `dist/`.
-
-## Test
-
-```sh
-npm test
-```
-
 ## Deployment
 
-TinyLocal Tools is a static app. It can be deployed to GitHub Pages or any
+TinyLocal Tools is a static app. It can be deployed to GitHub Pages or another
 static host by building the app and publishing the `dist/` folder.
 
 ## Contributing
@@ -87,11 +135,6 @@ sending changes.
 
 Please read `SECURITY.md` before reporting security problems. Do not paste
 secrets into public GitHub issues.
-
-## Japanese
-
-TinyLocal Tools は、文章をきれいにし、見せたくない情報をかくし、共有しやすくする小さなブラウザアプリです。
-文章はブラウザ内で処理され、サーバーへアップロードされません。
 
 ## License
 
