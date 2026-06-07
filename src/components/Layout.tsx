@@ -11,6 +11,9 @@ type LayoutProps = {
   privacyItems: string[];
   toolSummaryLabel: string;
   toolSummaries: { id: string; name: string; summary: string }[];
+  repositoryUrl: string;
+  githubLinkLabel: string;
+  starPrompt: string;
   language: Language;
   onLanguageChange: (language: Language) => void;
   tabs: { id: string; label: string }[];
@@ -28,6 +31,9 @@ export function Layout({
   privacyItems,
   toolSummaryLabel,
   toolSummaries,
+  repositoryUrl,
+  githubLinkLabel,
+  starPrompt,
   language,
   onLanguageChange,
   tabs,
@@ -44,7 +50,15 @@ export function Layout({
           <p className="intro-text">{intro}</p>
           <strong>{privacy}</strong>
         </div>
-        <LanguageToggle language={language} onChange={onLanguageChange} />
+        <div className="header-actions">
+          <LanguageToggle language={language} onChange={onLanguageChange} />
+          <div className="github-note">
+            <a href={repositoryUrl} target="_blank" rel="noreferrer">
+              {githubLinkLabel}
+            </a>
+            <p>{starPrompt}</p>
+          </div>
+        </div>
       </header>
 
       <section className="landing-summary" aria-labelledby="privacy-title">
@@ -84,6 +98,13 @@ export function Layout({
       </nav>
 
       <main>{children}</main>
+
+      <footer className="site-footer">
+        <a href={repositoryUrl} target="_blank" rel="noreferrer">
+          {githubLinkLabel}
+        </a>
+        <span>{starPrompt}</span>
+      </footer>
     </div>
   );
 }

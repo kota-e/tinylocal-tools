@@ -8,6 +8,7 @@ import { SafePaste } from '../tools/safepaste/SafePasteTool';
 type TabId = 'pastefix' | 'safepaste' | 'tablefixer';
 
 const tabIds: TabId[] = ['pastefix', 'safepaste', 'tablefixer'];
+const repositoryUrl = 'https://github.com/kota-e/tinylocal-tools';
 
 function readInitialTab(): TabId {
   if (typeof window === 'undefined') {
@@ -42,6 +43,9 @@ export function App() {
       privacyItems={[t.privacyBrowser, t.privacyNoUpload, t.privacyNoTracking]}
       toolSummaryLabel={t.toolSummaryLabel}
       toolSummaries={toolSummaries}
+      repositoryUrl={repositoryUrl}
+      githubLinkLabel={t.githubLinkLabel}
+      starPrompt={t.starPrompt}
       language={language}
       onLanguageChange={setLanguage}
       tabs={tabs}

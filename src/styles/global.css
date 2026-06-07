@@ -90,6 +90,42 @@ input:focus-visible {
   font-size: 15px;
 }
 
+.header-actions {
+  display: flex;
+  min-width: 190px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.github-note,
+.site-footer {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.github-note {
+  max-width: 230px;
+  text-align: right;
+}
+
+.github-note a,
+.site-footer a {
+  color: var(--accent-strong);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.github-note a:hover,
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.github-note p {
+  margin: 5px 0 0;
+}
+
 .landing-summary {
   display: grid;
   grid-template-columns: minmax(220px, 0.8fr) minmax(0, 2fr);
@@ -471,6 +507,15 @@ input:focus-visible {
   padding-bottom: 2px;
 }
 
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
 .preview-panel {
   margin-top: 18px;
   border: 1px solid var(--border);
@@ -513,6 +558,16 @@ th {
   .tool-heading,
   .site-header {
     flex-direction: column;
+  }
+
+  .header-actions {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .github-note {
+    max-width: 100%;
+    text-align: left;
   }
 
   .local-note {
