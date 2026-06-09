@@ -1,5 +1,11 @@
 # TinyLocal Tools
 
+## Live Demo
+
+[Open TinyLocal Tools](https://kota-e.github.io/tinylocal-tools/?tool=pastefix)
+
+TinyLocal Tools runs entirely in your browser. Your text is not uploaded to a server.
+
 TinyLocal Tools is a small, local-first browser app for people who need to clean,
 mask, and reshape text before they paste or share it.
 
