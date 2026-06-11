@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react';
 import { CopyButton } from '../../components/CopyButton';
+import { InputLimitNotice } from '../../components/InputLimitNotice';
 import { TextAreaPanel } from '../../components/TextAreaPanel';
 import { ToolCard } from '../../components/ToolCard';
 import type { Strings } from '../../i18n/strings';
-import { MAX_INPUT_LENGTH } from '../shared';
+import { isInputTooLarge } from '../shared';
 import { cleanText, defaultPasteFixOptions, type PasteFixMode, type PasteFixOptions } from './pastefix';
 
 type PasteFixProps = {
@@ -21,7 +22,7 @@ export function PasteFix({ t }: PasteFixProps) {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [options, setOptions] = useState<PasteFixOptions>(defaultPasteFixOptions);
-  const isOverLimit = input.length > MAX_INPUT_LENGTH;
+  const isOverLimit = isInputTooLarge(input);
   const result = useMemo(
     () =>
       isOverLimit
@@ -45,9 +46,7 @@ export function PasteFix({ t }: PasteFixProps) {
   return (
     <ToolCard title={t.pastefix} description={t.pastefixDesc} helper={t.localHelper}>
       {isOverLimit ? (
-        <p className="warning" role="alert">
-          {t.tooLarge}
-        </p>
+        <InputLimitNotice message={t.tooLarge} note={t.tooLargeNote} />
       ) : null}
       <div className="workspace-grid">
         <TextAreaPanel id="pastefix-input" label={t.input} value={input} onChange={setInput} placeholder={t.empty} />

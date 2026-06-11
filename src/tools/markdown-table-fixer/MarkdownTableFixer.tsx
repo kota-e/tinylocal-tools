@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react';
 import { CopyButton } from '../../components/CopyButton';
+import { InputLimitNotice } from '../../components/InputLimitNotice';
 import { TextAreaPanel } from '../../components/TextAreaPanel';
 import { ToolCard } from '../../components/ToolCard';
 import type { Strings } from '../../i18n/strings';
-import { MAX_INPUT_LENGTH } from '../shared';
+import { isInputTooLarge } from '../shared';
 import {
   defaultMarkdownTableOptions,
   formatMarkdownTable,
@@ -26,7 +27,7 @@ export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
   const [output, setOutput] = useState('');
   const [showPreview, setShowPreview] = useState(true);
   const [options, setOptions] = useState<MarkdownTableOptions>(defaultMarkdownTableOptions);
-  const isOverLimit = input.length > MAX_INPUT_LENGTH;
+  const isOverLimit = isInputTooLarge(input);
   const result = useMemo(
     () => (isOverLimit ? { markdown: '', rows: [], warnings: [] } : formatMarkdownTable(input, options)),
     [input, isOverLimit, options],
@@ -39,9 +40,7 @@ export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
   return (
     <ToolCard title={t.tablefixer} description={t.tableDesc} helper={t.localHelper}>
       {isOverLimit ? (
-        <p className="warning" role="alert">
-          {t.tooLarge}
-        </p>
+        <InputLimitNotice message={t.tooLarge} note={t.tooLargeNote} />
       ) : null}
       <div className="workspace-grid">
         <TextAreaPanel id="table-input" label={t.input} value={input} onChange={setInput} placeholder={t.empty} />

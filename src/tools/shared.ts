@@ -1,5 +1,9 @@
 export const MAX_INPUT_LENGTH = 100_000;
 
+export function isInputTooLarge(value: string, limit = MAX_INPUT_LENGTH): boolean {
+  return value.length > limit;
+}
+
 export function countLines(value: string): number {
   if (value.length === 0) {
     return 0;

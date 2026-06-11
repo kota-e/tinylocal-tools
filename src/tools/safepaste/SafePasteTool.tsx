@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react';
 import { CopyButton } from '../../components/CopyButton';
+import { InputLimitNotice } from '../../components/InputLimitNotice';
 import { TextAreaPanel } from '../../components/TextAreaPanel';
 import { ToolCard } from '../../components/ToolCard';
 import type { Strings } from '../../i18n/strings';
-import { MAX_INPUT_LENGTH } from '../shared';
+import { isInputTooLarge } from '../shared';
 import { defaultSafePasteOptions, maskSensitiveText, type SafePasteOptions } from './safepaste';
 
 type SafePasteProps = {
@@ -18,7 +19,7 @@ export function SafePaste({ t }: SafePasteProps) {
   const [output, setOutput] = useState('');
   const [customText, setCustomText] = useState('');
   const [options, setOptions] = useState<SafePasteOptions>(defaultSafePasteOptions);
-  const isOverLimit = input.length > MAX_INPUT_LENGTH;
+  const isOverLimit = isInputTooLarge(input);
   const result = useMemo(
     () =>
       isOverLimit
@@ -43,9 +44,7 @@ export function SafePaste({ t }: SafePasteProps) {
   return (
     <ToolCard title={t.safepaste} description={t.safepasteDesc} helper={t.localHelper}>
       {isOverLimit ? (
-        <p className="warning" role="alert">
-          {t.tooLarge}
-        </p>
+        <InputLimitNotice message={t.tooLarge} note={t.tooLargeNote} />
       ) : null}
       <p className="warning">{t.bestEffort}</p>
       <div className="workspace-grid">
