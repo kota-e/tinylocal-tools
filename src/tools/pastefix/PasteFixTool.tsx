@@ -19,6 +19,7 @@ It also has\u3000full-width spaces and repeated       spaces.  `;
 
 export function PasteFix({ t }: PasteFixProps) {
   const [input, setInput] = useState('');
+  const [output, setOutput] = useState('');
   const [options, setOptions] = useState<PasteFixOptions>(defaultPasteFixOptions);
   const isOverLimit = input.length > MAX_INPUT_LENGTH;
   const result = useMemo(
@@ -89,13 +90,27 @@ export function PasteFix({ t }: PasteFixProps) {
             {t.normalizeQuotes}
           </label>
           <div className="button-row">
-            <button type="button" className="primary-button" disabled={isOverLimit} onClick={() => setInput(result.output)}>
+            <button type="button" className="primary-button" disabled={isOverLimit} onClick={() => setOutput(result.output)}>
               {t.runPastefix}
             </button>
-            <button type="button" className="secondary-button" onClick={() => setInput('')}>
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={() => {
+                setInput('');
+                setOutput('');
+              }}
+            >
               {t.clear}
             </button>
-            <button type="button" className="secondary-button" onClick={() => setInput(sampleText)}>
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={() => {
+                setInput(sampleText);
+                setOutput('');
+              }}
+            >
               {t.sample}
             </button>
           </div>
@@ -127,8 +142,8 @@ export function PasteFix({ t }: PasteFixProps) {
           </dl>
         </div>
         <div className="output-column">
-          <TextAreaPanel id="pastefix-output" label={t.output} value={result.output} readOnly />
-          <CopyButton text={result.output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
+          <TextAreaPanel id="pastefix-output" label={t.output} value={output} readOnly />
+          <CopyButton text={output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
         </div>
       </div>
     </ToolCard>
