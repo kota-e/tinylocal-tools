@@ -15,6 +15,7 @@ const sampleText =
 
 export function SafePaste({ t }: SafePasteProps) {
   const [input, setInput] = useState('');
+  const [output, setOutput] = useState('');
   const [customText, setCustomText] = useState('');
   const [options, setOptions] = useState<SafePasteOptions>(defaultSafePasteOptions);
   const isOverLimit = input.length > MAX_INPUT_LENGTH;
@@ -66,7 +67,7 @@ export function SafePaste({ t }: SafePasteProps) {
             />
           </label>
           <div className="button-row">
-            <button type="button" className="primary-button" disabled={isOverLimit} onClick={() => setInput(result.output)}>
+            <button type="button" className="primary-button" disabled={isOverLimit} onClick={() => setOutput(result.output)}>
               {t.runSafepaste}
             </button>
             <button
@@ -74,12 +75,20 @@ export function SafePaste({ t }: SafePasteProps) {
               className="secondary-button"
               onClick={() => {
                 setInput('');
+                setOutput('');
                 setCustomText('');
               }}
             >
               {t.clear}
             </button>
-            <button type="button" className="secondary-button" onClick={() => setInput(sampleText)}>
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={() => {
+                setInput(sampleText);
+                setOutput('');
+              }}
+            >
               {t.sample}
             </button>
           </div>
@@ -96,8 +105,8 @@ export function SafePaste({ t }: SafePasteProps) {
           </div>
         </div>
         <div className="output-column">
-          <TextAreaPanel id="safepaste-output" label={t.output} value={result.output} readOnly />
-          <CopyButton text={result.output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
+          <TextAreaPanel id="safepaste-output" label={t.output} value={output} readOnly />
+          <CopyButton text={output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
         </div>
       </div>
     </ToolCard>

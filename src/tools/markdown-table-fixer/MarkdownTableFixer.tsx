@@ -23,6 +23,7 @@ Sam,Reviewer`;
 
 export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
   const [input, setInput] = useState('');
+  const [output, setOutput] = useState('');
   const [showPreview, setShowPreview] = useState(true);
   const [options, setOptions] = useState<MarkdownTableOptions>(defaultMarkdownTableOptions);
   const isOverLimit = input.length > MAX_INPUT_LENGTH;
@@ -80,13 +81,27 @@ export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
             {t.showPreview}
           </label>
           <div className="button-row">
-            <button type="button" className="primary-button" disabled={isOverLimit} onClick={() => setInput(result.markdown)}>
+            <button type="button" className="primary-button" disabled={isOverLimit} onClick={() => setOutput(result.markdown)}>
               {t.runTable}
             </button>
-            <button type="button" className="secondary-button" onClick={() => setInput('')}>
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={() => {
+                setInput('');
+                setOutput('');
+              }}
+            >
               {t.clear}
             </button>
-            <button type="button" className="secondary-button" onClick={() => setInput(sampleText)}>
+            <button
+              type="button"
+              className="secondary-button"
+              onClick={() => {
+                setInput(sampleText);
+                setOutput('');
+              }}
+            >
               {t.sample}
             </button>
           </div>
@@ -104,8 +119,8 @@ export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
           </div>
         </div>
         <div className="output-column">
-          <TextAreaPanel id="table-output" label={t.output} value={result.markdown} readOnly />
-          <CopyButton text={result.markdown} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
+          <TextAreaPanel id="table-output" label={t.output} value={output} readOnly />
+          <CopyButton text={output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
         </div>
       </div>
       {showPreview && result.rows.length > 0 ? (
