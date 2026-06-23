@@ -18,4 +18,9 @@ describe('Japanese UI copy', () => {
     expect(strings.ja.safepasteSummary).toBe('メールや電話番号などをかくします。');
     expect(strings.ja.tablefixerSummary).toBe('Markdown、CSV、TSVの表を整えます。');
   });
+
+  it('explains table row warnings in Japanese', () => {
+    expect(strings.ja.tableRowCellWarning).toBe('{row}行目の列が{actual}個です。必要な列は{expected}個です。');
+    expect(strings.en.tableRowCellWarning).toBe('Row {row} has {actual} cells; expected {expected}.');
+  });
 });

@@ -9,6 +9,7 @@ import {
   defaultMarkdownTableOptions,
   formatMarkdownTable,
   type MarkdownTableOptions,
+  type TableWarning,
   type TableAlignment,
   type TableInputType,
 } from './markdownTable';
@@ -21,6 +22,13 @@ const sampleText = `Name,Role,City
 Mina,Maintainer,Tokyo
 Alex,Contributor,Seattle
 Sam,Reviewer`;
+
+function formatWarningMessage(template: string, warning: TableWarning) {
+  return template
+    .replace('{row}', String(warning.rowNumber))
+    .replace('{actual}', String(warning.actualCells))
+    .replace('{expected}', String(warning.expectedCells));
+}
 
 export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
   const [input, setInput] = useState('');
@@ -111,7 +119,7 @@ export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
             ) : (
               <ul>
                 {result.warnings.map((warning) => (
-                  <li key={`${warning.rowNumber}-${warning.message}`}>{warning.message}</li>
+                  <li key={`${warning.rowNumber}-${warning.message}`}>{formatWarningMessage(t.tableRowCellWarning, warning)}</li>
                 ))}
               </ul>
             )}

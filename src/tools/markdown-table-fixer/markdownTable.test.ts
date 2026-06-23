@@ -43,7 +43,14 @@ describe('formatMarkdownTable', () => {
       normalizeEmptyCells: true,
     });
 
-    expect(result.warnings).toEqual([{ rowNumber: 2, message: 'Row 2 has 2 cells; expected 3.' }]);
+    expect(result.warnings).toEqual([
+      {
+        rowNumber: 2,
+        actualCells: 2,
+        expectedCells: 3,
+        message: 'Row 2 has 2 cells; expected 3.',
+      },
+    ]);
     expect(result.markdown).toContain('| Mina | Maintainer |      |');
   });
 

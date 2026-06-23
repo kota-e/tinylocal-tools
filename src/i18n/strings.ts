@@ -77,6 +77,7 @@ export const strings = {
     preview: 'Preview',
     warnings: 'Warnings',
     noWarnings: 'No table warnings.',
+    tableRowCellWarning: 'Row {row} has {actual} cells; expected {expected}.',
   },
   ja: {
     appName: 'TinyLocal Tools',
@@ -154,6 +155,7 @@ export const strings = {
     preview: 'プレビュー',
     warnings: '注意',
     noWarnings: '注意はありません。',
+    tableRowCellWarning: '{row}行目の列が{actual}個です。必要な列は{expected}個です。',
   },
 } as const;
 

@@ -10,6 +10,8 @@ export type MarkdownTableOptions = {
 
 export type TableWarning = {
   rowNumber: number;
+  actualCells: number;
+  expectedCells: number;
   message: string;
 };
 
@@ -90,6 +92,8 @@ function normalizeRows(rows: string[][], options: MarkdownTableOptions): { rows:
     if (row.length !== width) {
       warnings.push({
         rowNumber: index + 1,
+        actualCells: row.length,
+        expectedCells: width,
         message: `Row ${index + 1} has ${row.length} cells; expected ${width}.`,
       });
     }
