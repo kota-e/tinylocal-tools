@@ -5,7 +5,8 @@ import { TextAreaPanel } from '../../components/TextAreaPanel';
 import { ToolCard } from '../../components/ToolCard';
 import type { Strings } from '../../i18n/strings';
 import { isInputTooLarge } from '../shared';
-import { defaultSafePasteOptions, maskSensitiveText, type SafePasteOptions } from './safepaste';
+import { defaultSafePasteOptions, maskSensitiveText, type MaskCategory, type SafePasteOptions } from './safepaste';
+import { getSafePasteSummaryLabels } from './summaryLabels';
 
 type SafePasteProps = {
   t: Strings;
@@ -13,6 +14,16 @@ type SafePasteProps = {
 
 const sampleText =
   'Contact jane@example.com or +1 415 555 0199. Visit https://example.com/private. Server: 192.168.0.10. Token: sk-test_abcdefghijklmnopqrstuvwxyz123456.';
+
+const emptySummary: Record<MaskCategory, number> = {
+  EMAIL: 0,
+  PHONE: 0,
+  URL: 0,
+  IP: 0,
+  NUMBER: 0,
+  SECRET: 0,
+  CUSTOM: 0,
+};
 
 export function SafePaste({ t }: SafePasteProps) {
   const [input, setInput] = useState('');
@@ -23,10 +34,11 @@ export function SafePaste({ t }: SafePasteProps) {
   const result = useMemo(
     () =>
       isOverLimit
-        ? { output: '', summary: { EMAIL: 0, PHONE: 0, URL: 0, IP: 0, NUMBER: 0, SECRET: 0, CUSTOM: 0 } }
+        ? { output: '', summary: emptySummary }
         : maskSensitiveText(input, { ...options, customPhrases: customText.split('\n') }),
     [customText, input, isOverLimit, options],
   );
+  const summaryLabels = getSafePasteSummaryLabels(t);
 
   function updateOption<K extends keyof Omit<SafePasteOptions, 'customPhrases'>>(key: K, value: SafePasteOptions[K]) {
     setOptions((current) => ({ ...current, [key]: value }));
@@ -94,12 +106,15 @@ export function SafePaste({ t }: SafePasteProps) {
           <div className="summary-box">
             <h3>{t.summary}</h3>
             <dl className="summary-list">
-              {Object.entries(result.summary).map(([category, count]) => (
-                <div key={category}>
-                  <dt>{category}</dt>
-                  <dd>{count}</dd>
-                </div>
-              ))}
+              {Object.entries(result.summary).map(([category, count]) => {
+                const typedCategory = category as MaskCategory;
+                return (
+                  <div key={category}>
+                    <dt>{summaryLabels[typedCategory]}</dt>
+                    <dd>{count}</dd>
+                  </div>
+                );
+              })}
             </dl>
           </div>
         </div>
