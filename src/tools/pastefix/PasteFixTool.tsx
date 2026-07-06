@@ -38,6 +38,7 @@ export function PasteFix({ t }: PasteFixProps) {
         : cleanText(input, options),
     [input, isOverLimit, options],
   );
+  const copyResetKey = JSON.stringify({ input, options, output });
 
   function updateOption<K extends keyof PasteFixOptions>(key: K, value: PasteFixOptions[K]) {
     setOptions((current) => ({ ...current, [key]: value }));
@@ -142,7 +143,7 @@ export function PasteFix({ t }: PasteFixProps) {
         </div>
         <div className="output-column">
           <TextAreaPanel id="pastefix-output" label={t.output} value={output} readOnly />
-          <CopyButton text={output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
+          <CopyButton text={output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} resetKey={copyResetKey} />
         </div>
       </div>
     </ToolCard>

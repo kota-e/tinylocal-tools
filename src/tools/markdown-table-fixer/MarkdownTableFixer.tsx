@@ -40,6 +40,7 @@ export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
     () => (isOverLimit ? { markdown: '', rows: [], warnings: [] } : formatMarkdownTable(input, options)),
     [input, isOverLimit, options],
   );
+  const copyResetKey = JSON.stringify({ input, options, output });
 
   function updateOption<K extends keyof MarkdownTableOptions>(key: K, value: MarkdownTableOptions[K]) {
     setOptions((current) => ({ ...current, [key]: value }));
@@ -127,7 +128,7 @@ export function MarkdownTableFixer({ t }: MarkdownTableFixerProps) {
         </div>
         <div className="output-column">
           <TextAreaPanel id="table-output" label={t.output} value={output} readOnly />
-          <CopyButton text={output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
+          <CopyButton text={output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} resetKey={copyResetKey} />
         </div>
       </div>
       {showPreview && result.rows.length > 0 ? (

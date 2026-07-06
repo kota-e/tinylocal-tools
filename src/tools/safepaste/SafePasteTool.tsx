@@ -39,6 +39,7 @@ export function SafePaste({ t }: SafePasteProps) {
     [customText, input, isOverLimit, options],
   );
   const summaryLabels = getSafePasteSummaryLabels(t);
+  const copyResetKey = JSON.stringify({ customText, input, options, output });
 
   function updateOption<K extends keyof Omit<SafePasteOptions, 'customPhrases'>>(key: K, value: SafePasteOptions[K]) {
     setOptions((current) => ({ ...current, [key]: value }));
@@ -120,7 +121,7 @@ export function SafePaste({ t }: SafePasteProps) {
         </div>
         <div className="output-column">
           <TextAreaPanel id="safepaste-output" label={t.output} value={output} readOnly />
-          <CopyButton text={output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} />
+          <CopyButton text={output} label={t.copy} copiedLabel={t.copied} failedLabel={t.copyFailed} resetKey={copyResetKey} />
         </div>
       </div>
     </ToolCard>
