@@ -1,5 +1,6 @@
-import type { ReactNode } from 'react';
+import type { KeyboardEvent, ReactNode } from 'react';
 import { LanguageToggle } from './LanguageToggle';
+import { getTabTargetIndex } from './tabNavigation';
 import type { Language } from '../i18n/strings';
 
 type LayoutProps = {
@@ -41,6 +42,19 @@ export function Layout({
   onTabChange,
   children,
 }: LayoutProps) {
+  function handleTabKeyDown(event: KeyboardEvent<HTMLButtonElement>, currentIndex: number) {
+    const targetIndex = getTabTargetIndex(event.key, currentIndex, tabs.length);
+
+    if (targetIndex === null) {
+      return;
+    }
+
+    event.preventDefault();
+    const targetTab = tabs[targetIndex];
+    onTabChange(targetTab.id);
+    document.getElementById(`tab-${targetTab.id}`)?.focus();
+  }
+
   return (
     <div className="app-shell">
       <header className="site-header">
@@ -81,7 +95,7 @@ export function Layout({
       </section>
 
       <nav className="tabs" aria-label="Tools" role="tablist">
-        {tabs.map((tab) => (
+        {tabs.map((tab, index) => (
           <button
             type="button"
             key={tab.id}
@@ -90,7 +104,9 @@ export function Layout({
             className={activeTab === tab.id ? 'active' : ''}
             aria-controls={`panel-${tab.id}`}
             aria-selected={activeTab === tab.id}
+            tabIndex={activeTab === tab.id ? 0 : -1}
             onClick={() => onTabChange(tab.id)}
+            onKeyDown={(event) => handleTabKeyDown(event, index)}
           >
             {tab.label}
           </button>
